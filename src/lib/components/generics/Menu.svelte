@@ -70,7 +70,7 @@
 				href={item.link}
 				class="menu_item"
 				class:menu_item-active={$ActiveNavTab == item.name.toLocaleLowerCase()}
-				on:click={handleClick}
+				on:click={closeMenu}
 			>
 				{item.name}
 			</a>

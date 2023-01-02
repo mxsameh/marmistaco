@@ -7,13 +7,10 @@
   let contentHeight : number;
   let wraperHeight : number;
   const gap = 40;
-
   onMount(()=>
   {
     wraperHeight = contentHeight + footerHeight + gap
-    console.log( wraperHeight );
   })
-
  
 </script>
 
@@ -47,7 +44,9 @@
       z-index: 1;
       background-color: white;
       border-radius: 0 0 $border-radius $border-radius;
-      min-height: 150vh;
+      // min-height: 150vh;
+      // overflow-x: clip;
+      
     }
   }
   .main{
@@ -72,10 +71,11 @@
       }
     } 
     .header{
-      flex: 0 0;
+      flex-shrink: 0;
+      flex-grow: 0;
     }
     .main{
-      flex: 1 1 100%
+      width: calc(100% - var(--header-width));
     }
   }
   

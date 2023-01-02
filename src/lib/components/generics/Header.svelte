@@ -44,7 +44,7 @@
 
 <style lang='scss'>
   :root{
-    --header-width : 170px;
+    --header-width : 153px;
     --header-height : 73px
   }
   .header{
@@ -71,6 +71,7 @@
   @media screen and (min-width: 1024px){
     .header{
       &_wraper{
+        width: var(--header-width);
         height: 100vh;
         padding: 24px;
         position: sticky;
