@@ -15,7 +15,7 @@
 </script>
 
 
-<div class="page_wraper" style:height={wraperHeight+'px'}>
+<div class="page_wraper">
   <div class="page_content" bind:clientHeight={contentHeight}>
     <header class="header">
       <Header/>
@@ -25,7 +25,6 @@
     </main>
   </div>
 <footer class="footer" bind:clientHeight={footerHeight}>
-
 </footer>
 </div>
 
@@ -35,6 +34,7 @@
     &_wraper{
       width: 100vw;
       position: relative;
+      margin-bottom: calc(40px + 300px);
     }
     &_content{
       width: 100%;
@@ -44,14 +44,12 @@
       z-index: 1;
       background-color: white;
       border-radius: 0 0 $border-radius $border-radius;
-      // min-height: 150vh;
-      // overflow-x: clip;
-      
+      min-height: 100vh;
+      overflow-x: clip;
     }
   }
   .main{
     width: 100%;
-    background-color: var(--main-gray);
   }
   .footer{
     width: 100%;

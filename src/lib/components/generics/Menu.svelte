@@ -50,6 +50,7 @@
       },
       {
         y: 0,
+				ease: "power4.out",
         stagger:{amount: .5}
       }
     )
@@ -106,6 +107,7 @@
 			display: inline-flex;
 			font-family: 'Playfair Display', serif;
 			font-weight: 500;
+			text-transform: uppercase;
 			&:hover {
 				color: black;
 			}
