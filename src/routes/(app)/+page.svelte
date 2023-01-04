@@ -79,12 +79,16 @@
     .container{
       display: flex;
       padding: 0 24px;
+      margin: 0 auto;
+      gap: clamp(20px, 4vw, 80px);
+      max-width: calc(900px + 80px + 440px);
     }
     .body{
       padding: 56px 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
       &_title{
         font-size: clamp(48px, 6vw, 120px)
       }

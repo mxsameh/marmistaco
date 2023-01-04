@@ -1,7 +1,15 @@
 import {gsap} from "gsap"
 
+const setImageSize = (width : number) =>
+{
+  gsap.set('.gallery_image',{
+    width
+  })
+}
+
 const positionImages = (imageHeight : number) : void =>
 {
+  // console.log( imageHeight );
   gsap.set(`[data-col='0'] .gallery_image`,
   {
     y : (i) => imageHeight * (-1 + i)
@@ -42,8 +50,11 @@ const loopImages = (imageHeight : number , imagesLength : number) : void =>
 
 }
 
-const createVGallery = (imageHeight : number, imagesLength : number) =>
+const createVGallery = (imageSize : number, gap : number, imagesLength : number) =>
 {
+  const imageHeight = imageSize + gap
+  setImageSize(imageSize)
+  gsap.killTweensOf(".gallery_image");
   positionImages(imageHeight);
   loopImages(imageHeight, imagesLength);
 }

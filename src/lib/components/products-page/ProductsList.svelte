@@ -60,7 +60,7 @@
         margin-top: 20px;
       }
       &:hover &_name{
-        color: black;
+        color: var(--text-1);
       }
       &:hover &_image{
         filter: drop-shadow(10px 8px 8px rgba(0,0,0,.3)) brightness(1);

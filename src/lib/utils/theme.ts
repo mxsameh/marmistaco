@@ -14,7 +14,6 @@ const detectTheme = () =>{
   {
     document.documentElement.setAttribute("data-theme","dark") 
   }
-  console.log( theme );
 }
 
 export default detectTheme;

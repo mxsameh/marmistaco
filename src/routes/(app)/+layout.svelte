@@ -3,10 +3,15 @@
 	import Header from '$lib/components/generics/Header.svelte';
 	import { onMount } from 'svelte';
 
-	onMount(() => {});
+	let pageWraper : HTMLDivElement
+
+	onMount(() =>
+	{
+		pageWraper.style.opacity = "1"
+	});
 </script>
 
-<div class="page_wraper">
+<div class="page_wraper" style:opacity="0" bind:this={pageWraper}>
 	<div class="page_content">
 		<header class="header">
 			<Header />

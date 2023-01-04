@@ -16,7 +16,7 @@
 	--text-1: #111;
 	--text-2: #333;
 	--text-3: #555;
-	--accent: pink
+	--accent: #837542
 }
 [data-theme="dark"]{
 	--background-1: #393939;
@@ -25,7 +25,7 @@
 	--text-1: #EEE;
 	--text-2: #BBB;
 	--text-3: #888;
-	--accent: pink
+	--accent: #837542
 }
 
 @media (prefers-color-scheme: dark){
@@ -36,7 +36,7 @@
 	--text-1: #EEE;
 	--text-2: #BBB;
 	--text-3: #888;
-	--accent: pink
+	--accent: #837542
 	}
 }
 
