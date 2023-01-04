@@ -87,7 +87,7 @@
 		height: calc(100vh - var(--header-height));
 		position: fixed;
 		top: var(--header-height);
-    padding: 40px 0;
+    padding: 56px 0 40px;
 		left: 0;
 		z-index: 99;
     overflow-y: scroll;

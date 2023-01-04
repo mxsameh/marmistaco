@@ -28,7 +28,7 @@
 	--accent: #837542
 }
 
-@media (prefers-color-scheme: dark){
+/* @media (prefers-color-scheme: dark){
 	:root{
 	--background-1: #393939;
 	--background-2: #212121;
@@ -38,7 +38,7 @@
 	--text-3: #888;
 	--accent: #837542
 	}
-}
+} */
 
 body{
 	background-color: var(--background-1) ;

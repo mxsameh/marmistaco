@@ -4,6 +4,7 @@
 	import IsMenuOpened from "$lib/stores/IsMenuOpenedStore";
   import Menu from "./Menu.svelte";
 	import MenuBtn from "./MenuBtn.svelte";
+	import ThemeBtn from "./ThemeBtn.svelte";
 
   const handleClick = () =>
   {
@@ -37,6 +38,7 @@
       <a href="/contact" class="nav_link" class:nav_link-active={activeLink == 'contact'}>contact</a>
     </div>
   </nav>
+  <ThemeBtn />
   <!-- MENU BUTTON -->
   <MenuBtn on:menuBtnClicked={handleClick}/>
 </div>
@@ -54,7 +56,7 @@
       align-items: center;
       padding: 16px 20px;
       width: 100%;
-      height: var(--header-height);
+      // height: var(--header-height);
     }
     &_logo{
       width: 40px; 

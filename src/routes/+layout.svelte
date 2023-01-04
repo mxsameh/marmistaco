@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ScreenSize from '$lib/stores/ScreenSizeStore';
-	import detectTheme from '$lib/utils/theme';
-	import "@fontsource/playfair-display/variable.css"
+	import { detectTheme } from '$lib/utils/theme';
+	import '@fontsource/playfair-display/variable.css';
 	import { onMount } from 'svelte';
 	import '../styles/styles.css';
 	onMount(() => {
@@ -19,12 +19,13 @@
 		}
 	};
 </script>
+
 <svelte:window on:resize={handleResize} />
 
-<slot/>
+<slot />
 
 <style lang="scss">
-	:global(body){
+	:global(body) {
 		font-family: 'Playfair DisplayVariable', serif;
 		// font-weight: 400;
 	}
