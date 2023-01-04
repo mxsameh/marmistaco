@@ -43,7 +43,6 @@
       object-fit: cover;
       border-radius: 24px;
       filter: drop-shadow(-4px 8px 10px rgba(0,0,0,.3));
-      background-color: var(--gray-200);
     }
 	}
 </style>

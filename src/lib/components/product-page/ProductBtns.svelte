@@ -40,7 +40,7 @@
 		width: 80px;
 		height: auto;
 		fill: none;
-		stroke: var(--gray-700);
+		stroke: var(--accent);
     path{
       stroke-width: 4;
     }

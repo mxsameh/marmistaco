@@ -19,8 +19,8 @@
         <p class="cta_text">view all products</p> 
         <svg class="cta_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.076 74.199">
           <g transform="translate(0 73.777) rotate(-90)">
-            <line y2="93.477" transform="translate(36.677 0)" stroke="#1e1e20" stroke-miterlimit="10" stroke-width="3"/>
-            <path d="M73.355,0C46.385,7.916,36.679,30.21,36.679,30.21S26.97,7.916,0,0" transform="translate(0 63.267)"stroke="#1e1e20" stroke-linejoin="bevel" stroke-width="3"/>
+            <line y2="93.477" transform="translate(36.677 0)" stroke-miterlimit="10" stroke-width="3"/>
+            <path d="M73.355,0C46.385,7.916,36.679,30.21,36.679,30.21S26.97,7.916,0,0" transform="translate(0 63.267)" stroke-linejoin="bevel" stroke-width="3"/>
           </g>
         </svg>
       </a>
@@ -39,6 +39,7 @@
 			font-size: clamp(44px, 10vw, 100px);
 			text-align: center;
 			text-transform: capitalize;
+      color: var(--text-1);
 		}
 
     &_content{
@@ -48,6 +49,8 @@
 			margin-top: 48px;
 			font-size: 24px;
 			text-align: center;
+      color: var(--text-2);
+      font-family: Arial, Helvetica, sans-serif;
 		}
 	}
 
@@ -61,10 +64,12 @@
 		&_text {
 			font-size: 24px;
 			text-transform: uppercase;
-			font-family: Georgia, 'Times New Roman', Times, serif;
+      color: var(--accent);
 		}
     &_icon{
       fill : none;
+      -webkit-text-stroke-color: var(--accent);
+      stroke: var(--accent);
       width: 32px;
       rotate: -40deg;
     }

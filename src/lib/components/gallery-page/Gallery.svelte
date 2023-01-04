@@ -45,6 +45,5 @@
 	}
 	.gallery_img {
 		position: absolute;
-    background-color: var(--gray-500);
 	}
 </style>

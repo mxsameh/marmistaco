@@ -46,7 +46,6 @@
       object-fit: cover;
       border-radius: 16px;
       filter: drop-shadow(10px 8px 8px rgba(0,0,0,.3));
-      background-color: var(--gray-200);
     }
 	}
 </style>

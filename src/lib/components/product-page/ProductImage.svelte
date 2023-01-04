@@ -17,7 +17,6 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--gray-100);
   }
   @media screen and (min-width: 768px)
   {

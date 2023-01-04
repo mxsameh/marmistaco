@@ -83,12 +83,12 @@
 	.menu {
 		display: none;
 		width: 100vw;
+		background-color: var(--background-2);
 		height: calc(100vh - var(--header-height));
 		position: fixed;
 		top: var(--header-height);
     padding: 40px 0;
 		left: 0;
-		background-color: var(--gray-100);
 		z-index: 99;
     overflow-y: scroll;
 
@@ -99,20 +99,19 @@
 			align-items: center;
 		}
 		&_item {
-			color: var(--gray-500);
 			font-size: clamp(32px, 14vw, 80px);
 			font-kerning: none;
 			width: fit-content;
 			overflow: hidden;
 			display: inline-flex;
-			font-family: 'Playfair Display', serif;
 			font-weight: 500;
+			color: var(--text-2);
 			text-transform: uppercase;
 			&:hover {
 				color: black;
 			}
 			&-active {
-				color: black;
+				color: var(--accent);
 			}
 		}
 	}

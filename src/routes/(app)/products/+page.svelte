@@ -16,15 +16,14 @@
     padding: 24px 0;
   }
   .title{
-    font-family: 'Playfair Display', serif;
-    color: var(--gray-700);
     text-align: center;
+    color: var(--text-1);
     padding: 0 8px;
     white-space: nowrap;
     font-weight: 600;
     text-transform: capitalize;
     font-size: clamp(32px, 10vw, 64px);
-    // line-height: clamp(48px, 10vw, 104px);
+    line-height: 1.2;
   }
 
   @media screen and (min-width: 1024px){

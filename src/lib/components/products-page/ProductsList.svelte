@@ -33,18 +33,16 @@
       aspect-ratio: 1;
       object-fit: cover;
       border-radius: 20px;
-      background-color: var(--gray-200);
       filter: drop-shadow(10px 8px 8px rgba(0,0,0,.3)) brightness(1);
     }
     &_name{
-      color: var(--gray-500);
       margin-top: 16px;
       text-transform: capitalize;
-      font-family: 'Playfair Display';
       font-size: 24px;
       font-weight: normal;
       text-align: center;
       white-space: nowrap;
+      color: var(--text-2);
     }
   }
 
@@ -56,7 +54,6 @@
     }
     .product{
       &_image{
-        filter: brightness(.8);
         transition: scale 150ms ease-in;
       }
       &_name{

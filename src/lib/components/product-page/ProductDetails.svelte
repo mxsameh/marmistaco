@@ -18,8 +18,8 @@
 	.product {
 		&_details {
 			height: 100%;
-			background-color: var(--gray-100);
 			border-radius: var(--border-radius) var(--border-radius) 0 0;
+			background-color: var(--background-3);
 		}
 		&_body {
 			padding: 24px 0;
@@ -29,12 +29,12 @@
 			align-items: center;
 		}
 		&_title {
-			font-family: 'Playfair Display';
 			text-transform: capitalize;
 			font-weight: 500;
 			font-size: 48px;
 			text-align: center;
 			padding: 0 8px;
+			color: var(--text-1);
 		}
 		&_btns {
 			width: fit-content;
