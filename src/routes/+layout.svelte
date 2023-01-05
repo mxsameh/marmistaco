@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/stores';
+	import ActiveNavTab from '$lib/stores/ActiveNavTabStore';
 	import ScreenSize from '$lib/stores/ScreenSizeStore';
 	import { detectTheme } from '$lib/utils/theme';
 	import '@fontsource/playfair-display/variable.css';
@@ -8,6 +10,12 @@
 		handleResize();
 		detectTheme();
 	});
+
+	$: activeTab = $page.route.id?.replaceAll('/', ' ').trim().split(' ')[1] || 'home';
+	$: {
+		ActiveNavTab.set(activeTab);
+		console.log( $ActiveNavTab );
+	}
 
 	const handleResize = () => {
 		if (window.innerWidth > 1024) {
