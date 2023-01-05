@@ -155,8 +155,10 @@ const scrollImages = (imgs: NodeListOf<Element>) => {
 	let y = window.pageYOffset;
 	gsap.to(imgs, {
 		y: `-${y}`,
-		duration: (i) => getImageEase(i),
-		ease: colsNumber == 1 ? 'linear' : 'ease.in'
+		// duration: (i) => getImageEase(i),
+		// ease: colsNumber == 1 ? 'linear' : 'ease.in'
+		duration: 0,
+		ease: 'none'
 	});
 };
 

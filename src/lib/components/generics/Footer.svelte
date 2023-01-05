@@ -8,7 +8,7 @@
 	<nav class="footer_nav">
 		<a class="footer_link" href="/products">products</a>
 		<a class="footer_link" href="/gallery">gallery</a>
-		<a class="footer_link" href="/cotact">contact</a>
+		<a class="footer_link" href="/contact">contact</a>
 	</nav>
 
 	<div class="section">

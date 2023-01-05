@@ -1,12 +1,9 @@
 <script lang="ts">
-  let email = 'info@marmista.co';
-	let phone = '+201229994355';
 	let whatsapp = '+201229994355';
 
 	let waLink = `https://wa.me/${whatsapp}`;
 	let fbLink = 'https://www.facebook.com/syrian.Egyptian.marble';
 	let igLink = 'https://www.instagram.com/mohamed.maged.s/';
-	let phLink = `tel:${phone}`;
   
   
 </script>
@@ -36,51 +33,51 @@
 		</svg>
 		<p class="social_text">instagram</p>
 	</a>
-	<a class="social_link" target="_blank" rel="noreferrer" href={phLink}>
-		<svg class="social_icon" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-			<path
-				d="M15.4467 25.1767C18.8067 31.78 24.22 37.17 30.8233 40.5533L35.9567 35.42C36.5867 34.79 37.52 34.58 38.3367 34.86C40.95 35.7233 43.7733 36.19 46.6667 36.19C47.95 36.19 49 37.24 49 38.5233V46.6667C49 47.95 47.95 49 46.6667 49C24.7567 49 7 31.2433 7 9.33333C7 8.05 8.05 7 9.33333 7H17.5C18.7833 7 19.8333 8.05 19.8333 9.33333C19.8333 12.25 20.3 15.05 21.1633 17.6633C21.42 18.48 21.2333 19.39 20.58 20.0433L15.4467 25.1767Z"
-			/>
-		</svg>
-		<p class="social_text">phone</p>
-	</a>
 </div>
 
 <style lang="scss">
 	.social {
 		display: flex;
-		gap: 32px;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
 
 		&_link {
-		}
-		&_text {
-			display: none;
+      display: flex;
+      gap: 8px;
 		}
 		&_icon {
 			width: 28px;
-      fill: var(--text-3);
+			fill: var(--text-3);
+		}
+		&_text {
+			font-size: 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: var(--text-1);
+      text-transform: capitalize;
 		}
 	}
 	@media screen and (min-width: 768px){
-		.social{
-				gap: 80px;
-			&_link{
-				display: flex;
-			}
-			&_text{
-				// display: block;
-				font-family: Arial, Helvetica, sans-serif;
-				text-transform: capitalize;
-				font-size: 20px;
-			}
-			&_icon{
-				width: 40px;
-				&:hover{
-					cursor: pointer;
-					fill: var(--accent);
-				}
-			}
-		}
+		// .social{
+		// 		gap: 80px;
+		// 	&_link{
+		// 		display: flex;
+		// 	}
+		// 	&_text{
+		// 		// display: block;
+		// 		font-family: Arial, Helvetica, sans-serif;
+		// 		text-transform: capitalize;
+		// 		font-size: 20px;
+		// 	}
+		// 	&_icon{
+		// 		width: 40px;
+		// 		&:hover{
+		// 			cursor: pointer;
+		// 			fill: var(--accent);
+		// 		}
+		// 	}
+		// }
 	
 	}
 </style>
