@@ -14,7 +14,6 @@
 	$: activeTab = $page.route.id?.replaceAll('/', ' ').trim().split(' ')[1] || 'home';
 	$: {
 		ActiveNavTab.set(activeTab);
-		console.log( $ActiveNavTab );
 	}
 
 	const handleResize = () => {
