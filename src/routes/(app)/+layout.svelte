@@ -29,7 +29,7 @@
 	$border-radius: 40px;
 	.page {
 		&_wraper {
-			width: 100vw;
+			width: 100%;
 			position: relative;
 			margin-bottom: calc(var(--footer-height) + 40px);
 		}
